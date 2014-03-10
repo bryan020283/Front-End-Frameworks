@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src = "js/app.js"></script>
+    <link rel = "stylesheet" href = "css/style.css"/>
+
+
+</head>
+<body class = "container" ng-app>
+
+<div id = "mainSection"ng-controller="myController">
+
+<h1> {{projectName}}</h1>
+    <div class = 'section'>
+    <input type = 'text' ng-model='newItem' />
+    <input ng-submit value = "Add Item" type="submit" ng-click="addGroceryItem()"/>
+    <!--<p>{{newItem}}</p>-->
+
+    <ul>
+        <li class = "push" ng-repeat="name in groceryArray">{{name}}  <button class = 'delete' ng-click="deleteItem(name)">Delete</button></li>
+
+    </ul>
+    </div>  <!-- end section -->
+</div>
+
+</body>
+</html>
+
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
