@@ -1,0 +1,26 @@
+
+
+body{
+    background: url("../img/background.jpg") repeat;
+
+}
+
+
+.display_box{
+    background-color: #add8e6;
+    width: 200px;
+    border-radius: 4px;
+    padding: 5px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+p{
+    font-weight: bold;
+}
+
+input{
+
+    border: 2px solid black;
+}
